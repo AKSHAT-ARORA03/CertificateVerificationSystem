@@ -1,0 +1,61 @@
+.certificate-container {
+    width: 900px;
+    height: 600px;
+    border: 10px solid #e4670d;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  
+  .certificate-header {
+    margin-bottom: 50px;
+  }
+  
+  .certificate-header h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .certificate-header p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .certificate-body {
+    margin-bottom: 50px;
+  }
+  
+  .certificate-body .student-name {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .certificate-body .internship-domain {
+    font-size: 25px;
+    margin: 15px 0;
+    font-weight: bold;
+  }
+  
+  .certificate-body .dates {
+    font-size: 18px;
+  }
+  
+  .certificate-footer {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .certificate-footer p {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  

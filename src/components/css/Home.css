@@ -1,0 +1,78 @@
+/* Search Bar CSS */
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 180px 0;
+    padding: 0 20px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    border-radius: 25px 0 0 25px; /* Rounded corners on the left side */
+    border: 1px solid #0072ff; /* Border matching the navbar */
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for focus state */
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-input:focus {
+    border-color: #0056b3; /* Darker blue on focus */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+.search-button {
+    padding: 11.5px 25px;
+    background-color: #0072ff; /* Button color matching the navbar */
+    border: 1px solid #0072ff;
+    border-radius: 0 25px 25px 0; /* Rounded corners on the right side */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover state */
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+
+
+
+
+/* Container for the Writeup */
+.writeup {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: -90px;
+    text-decoration: solid;
+    font-size: 40px;
+    font-weight: 650;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide the overflowing text */
+    border-right: none; /* Remove the blinking cursor */
+    width: 0; /* Start with no width */
+    animation: typing 3s steps(40) forwards; /* Typing animation */
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+

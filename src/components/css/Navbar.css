@@ -1,0 +1,55 @@
+/* Navbar CSS with a Beautiful Bluish Gradient */
+
+header {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff); /* Blue gradient background */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-right: auto;
+}
+
+.logo img {
+    width: 90px; /* Increase the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 65px; /* Ensure logo height doesn't exceed navbar height */
+}
+
+/* Responsive Design */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+    .container {
+        justify-content: center; /* Center items in smaller screens */
+    }
+
+    .logo img {
+        width: 75px; /* Reduce logo size on smaller screens */
+        max-height: 50px;
+    }
+}
+
+/* For smaller phones */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+
+    .logo img {
+        width: 60px; /* Further reduce logo size */
+        max-height: 45px;
+    }
+}
