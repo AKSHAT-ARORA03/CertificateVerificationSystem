@@ -1,3 +1,5 @@
+/* sidebar.css */
+
 /* Basic Sidebar Styles */
 .app-container {
   display: flex;
@@ -25,11 +27,8 @@
 
 .nav-item {
   margin-bottom: 20px;
-  padding-left: 5px;
 }
-.icon{
-  padding-right: 8px;
-}
+
 .nav-link {
   color: #ecf0f1;
   text-decoration: none;
@@ -38,12 +37,19 @@
   align-items: center;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  border-radius: 5px; /* Added border-radius for smoother look */
 }
 
 .nav-link:hover {
   background-color: #9aadc1;
 }
 
+/* Icon styling */
+.icon {
+  padding-right: 8px;
+}
+
+/* Main content adjustment */
 .main-content {
   margin-left: 250px; /* Space for the sidebar */
   padding: 20px;
@@ -57,7 +63,7 @@
   .sidebar {
     transform: translateX(-100%); /* Hide off-screen by default */
     width: 100%; /* Full width when visible */
-    margin-top: -15px;
+    margin-top: -15px; /* Adjust margin if needed */
   }
 
   .main-content {
@@ -76,7 +82,7 @@
   position: fixed;
   top: 10px; /* Position from the top */
   right: 10px; /* Position from the right */
-  background-color:  rgb(44, 98, 152);;
+  background-color: rgb(44, 98, 152);
   color: #ecf0f1;
   padding: 10px;
   border: none;
@@ -84,12 +90,12 @@
   font-size: 18px;
   z-index: 1100; /* Ensure it is above other content */
   border-radius: 7px;
-  
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for smooth effects */
 }
-.toggle-btn:hover{
-  background-color: rgb(41, 46, 102);
-  zoom: 1.1;
 
+.toggle-btn:hover {
+  background-color: rgb(41, 46, 102);
+  transform: scale(1.1); /* Smooth zoom effect */
 }
 
 /* Show the toggle button on smaller screens */

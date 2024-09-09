@@ -1,4 +1,4 @@
-/* Navbar CSS with a Beautiful Bluish Gradient */
+/* Navbar CSS with Profile Picture Styling */
 
 header {
     background: linear-gradient(to bottom, #00c6ff, #0072ff); /* Blue gradient background */
@@ -8,24 +8,78 @@ header {
 
 .container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space items out */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .logo {
     display: flex;
     align-items: center; /* Center vertically */
-    margin-right: auto;
+    flex: 1; /* Take up space on the left side */
 }
 
 .logo img {
-    width: 90px; /* Increase the size of the logo */
+    width: 120px; /* Increase the size of the logo */
     height: auto; /* Maintain aspect ratio */
-    max-height: 65px; /* Ensure logo height doesn't exceed navbar height */
+    max-height: 80px; /* Ensure logo height doesn't exceed a reasonable size */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    display: flex; /* Ensure nav is aligned horizontally */
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+nav ul {
+    display: flex; /* Align nav items horizontally */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
 }
 
 /* Responsive Design */
@@ -33,12 +87,28 @@ header {
 /* For tablets and larger phones */
 @media (max-width: 768px) {
     .container {
-        justify-content: center; /* Center items in smaller screens */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    nav {
+        justify-content: flex-start; /* Align nav items to the left on smaller screens */
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-start;
     }
 
     .logo img {
-        width: 75px; /* Reduce logo size on smaller screens */
-        max-height: 50px;
+        width: 100px; /* Reduce logo size on smaller screens */
+        max-height: 60px;
+    }
+
+    .profile-picture {
+        width: 30px; /* Adjust profile picture size */
+        height: 30px;
     }
 }
 
@@ -49,7 +119,12 @@ header {
     }
 
     .logo img {
-        width: 60px; /* Further reduce logo size */
-        max-height: 45px;
+        width: 80px; /* Further reduce logo size */
+        max-height: 50px;
+    }
+
+    .profile-picture {
+        width: 30px;
+        height: 30px;
     }
 }

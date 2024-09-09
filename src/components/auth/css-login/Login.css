@@ -1,0 +1,88 @@
+/* Login CSS with a Beautiful Background and Form Styling */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* Blueish gradient background */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-box button {
+    background-color: #2193b0;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #176785;
+}
+
+.login-box .google-login {
+    background-color: #db4437;
+    margin-top: 15px;
+}
+
+.login-box .google-login:hover {
+    background-color: #b3382d;
+}
+
+/* Responsive Design */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 20px;
+    }
+
+    .login-box input, .login-box button {
+        font-size: 14px;
+    }
+}
+
+/* For smaller phones */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 15px;
+    }
+
+    .login-box input, .login-box button {
+        font-size: 12px;
+    }
+}
